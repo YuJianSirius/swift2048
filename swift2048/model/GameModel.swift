@@ -63,4 +63,21 @@ class GameModel{
         }
         return false
     }
+    
+    func findRightPosition()
+    {
+        for index in 0..dimension*dimension {
+            //if(chessArray[index])
+        }
+    }
+    
+    func margeValue()
+    {
+        for index in dimension..dimension*dimension {
+            if(chessArray[index-dimension] == chessArray[index] && chessArray[index] != 0){
+                chessArray[index-dimension] *= 2
+                chessArray[index] = 0
+            }
+        }
+    }
 }
